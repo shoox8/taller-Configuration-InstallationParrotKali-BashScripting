@@ -5,7 +5,7 @@
 
 ![[ImportKali.png]](/Images/ImportKali.png)
 
-![[selectOva.png]]
+![[selectOva.png]](/Images/selectOva.png)
 
 - Le damos a **Next**  y especificamos las características que queramos que tenga la máquina. A continuación voy a dejar mis características por si queréis tomar la misma configuración:
 	- *CPU : 4*
@@ -15,11 +15,11 @@
 - Esperamos que se instale...
 
 
-![[Installing.png]]
+![[Installing.png]](/Images/Installing.png)
 
 - Una vez instalado, nos dirigimos a **Settings** y en la sección **Network** la cambiamos **NAT** por **Bridge Adapter**.
 
-![[SettingsBridgeAdapter.png]]
+![[SettingsBridgeAdapter.png]](/Images/SettingsBridgeAdapter.png)
 
 - Una vez tengamos la configuración como hemos indicado, pulsamos en **Start** para comenzar con la *instalacion - configuración*.
 
@@ -29,7 +29,7 @@ Si nos hemos descargado la OVA de la web oficial, el **user y password** es *kal
 
 Una vez dentro, abrimos la terminal con **click derecho - Open terminal here** o en la parte superior del escritorio.
 
-![[openTerminal.png]]
+![[openTerminal.png]](/Images/openTerminal.png)
 
 A continuación, vamos a realizar una actualización de los paquetes y descarga de los mismos. No sin antes comprobar que tenemos conexión a internet, para ello vamos a escribir el siguiente comando:
 
@@ -46,7 +46,7 @@ ping 8.8.8.8
 
 ```
 
-![[Talleres/1 Taller - Configuracion-Instalacion Parrot/Images/pingGoogle.png]]
+![[Talleres/1 Taller - Configuracion-Instalacion Parrot/Images/pingGoogle.png]](/Images/pingGoogle.png)
 
 Comprobamos como efectivamente nos responde y por tanto, **tenemos conexión** a internet.
 
@@ -56,11 +56,11 @@ Ahora vamos con la **actualización y descarga de paquetes**:
 sudo apt update && sudo apt upgrade
 ```
 
-![[aptUpdateUpgrade.png]]
+![[aptUpdateUpgrade.png]](/Images/aptUpdateUpgrade.png)
 
 Escribimos **Y** y pulsamos enter o directamente pulsamos **enter** ya que por defecto nos instalará todos los paquetes.
 
-![[restartlibs.png]]
+![[restartlibs.png]](/Images/restartlibs.png)
 
 ```ad-warning
 **LA ACTUALIZACIÓN DE PAQUETES REALIZARLA DESDE CASA CON VUESTRA FIBRA.** Es un proceso que suele tardar bastante.
@@ -70,7 +70,7 @@ Escribimos **Y** y pulsamos enter o directamente pulsamos **enter** ya que por d
 
 Si nos hemos descargado la OVA de la web oficial, **NO** tendremos que proporcionar **user y password**. Aunque una vez dentro el usuario y password son **user** y **toor**.
 
-![[errorParrot.png]]
+![[errorParrot.png]](/Images/errorParrot.png)
 
 ```ad-note
 Puede que cuando arranquemos la máquina nos salga este error. Para solucionarlo nos vamos a la terminal y escribimos **sudo modprobe vboxdrv**
@@ -92,7 +92,7 @@ ping 8.8.8.8
 **Sirve para determinar si una dirección IP específica o host es accesible desde la red o no**.
 
 ```
-![[pingGoogleParrot.png]]
+![[pingGoogleParrot.png]](/Images/pingGoogleParrot.png)
 
 Comprobamos como efectivamente nos responde y por tanto, **tenemos conexión** a internet.
 
@@ -114,7 +114,7 @@ En parrrot no es **apt upgrade**, cuidado porque nos podemos cargar el gestor de
 
 Una vez abierta la terminal, lo que nos encotramos es el **Prompt**, que nos proporciona información como nuestro **usuario** el **host** y el **directorio actual** donde nos encontramos.
 
-![[prompt.png]]
+![[prompt.png]](/Images/prompt.png)
 
 - **user** es el nombre de usuario de nuestro equipo con el que tenemos la sesión iniciada.
 - **parrot** pertenece al host del sistema.
@@ -178,7 +178,7 @@ Por otro lado tenemos el comando **ls** que trae con él bastantes opciones inte
 - **-a -all** No oculta los ficheros que sean ocultos.
 - **-l** utiliza un foramto de listado largo (long).
 
-![[ls-l.png]]
+![[ls-l.png]](/Images/ls-l.png)
 
 ## Instalación del zsh
 
@@ -186,11 +186,11 @@ Por otro lado tenemos el comando **ls** que trae con él bastantes opciones inte
 
 - Nos vamos a [NerdFonts](https://www.nerdfonts.com/), y hacemos clic donde dice **Fonts Downloads**.
 
-![[nerdFonts.png]]
+![[nerdFonts.png]](/Images/nerdFonts.png)
 
 - Buscamos por **Hack Nerd Font** y descargamos el .zip.
 
-![[hackNerdFonts.png]]
+![[hackNerdFonts.png]](/Images/hackNerdFonts.png)
 
 - Movemos **Hack.zip** a la ruta **/usr/local/share/fonts**.
 
@@ -198,7 +198,7 @@ Por otro lado tenemos el comando **ls** que trae con él bastantes opciones inte
 sudo mv Hack.zip /usr/local/share/fonts
 ```
 
-![[mvHackZip.png]]
+![[mvHackZip.png]](/Images/mvHackZip.png)
 
 - Nos dirigimos a la ruta a la que hemos movido el fichero **Hack.zip** y los descomprimimos con **unzip fichero**.
 
@@ -206,7 +206,7 @@ sudo mv Hack.zip /usr/local/share/fonts
 sudo unzip Hack.zip
 ```
 
-![[unzipHack.png]]
+![[unzipHack.png]](/Images/unzipHack.png)
 
 - Ya podemos eliminar el zip.
 
@@ -216,11 +216,11 @@ sudo rm Hack.zip
 
 - Nos dirigimos en la parte superior de la terminal donde aparece **Edit -> Profile Preferences**.
 
-![[editProfile.png]]
+![[editProfile.png]](/Images/editProfile.png)
 
 - Una vez dentro deseleccionamos la opción *Use the system fixed width font* y en **Font** buscamos y seleccionamos **Hack Nerd Font Mono Regular**. Por último salimos para guardar la configuración.
 
-![[MonoRegular.png]]
+![[MonoRegular.png]](/Images/MonoRegular.png)
 
 ### Descarga y configuración de powerlevel10k
 
@@ -233,7 +233,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 
-![[powerLevel10k.png]]
+![[powerLevel10k.png]](/Images/powerLevel10k.png)
 
 - Una vez clonado ya podemos ejecutar **zsh** para su configuración. Escribimos en la terminal **zsh** y realizamos la configuración.
 
@@ -241,9 +241,9 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 zsh
 ```
 
-![[inicioZsh.png]]
+![[inicioZsh.png]](/Images/inicioZsh.png)
 
-![[instaladaPowerLevel10k.png]]
+![[instaladaPowerLevel10k.png]](/Images/instaladaPowerLevel10k.png)
 
 - Una vez instalada la pw10k, vamos a proceder a la configuración de la misma. Para ello nos dirigimos a la ruta **~/.p10.zsh** y lo abrimos con el editor nano.
 
@@ -253,12 +253,12 @@ nano ~/.p10k.zsh
 
 - Si queréis tener la misma configuración que la mía debéis de dejarlo de la siguiente manera:
 
-![[derechaPW10k.png]]
+![[derechaPW10k.png]](/Images/derechaPW10k.png)
 
 - Tenéis que comentar todas las líneas que aparecen en la imagen, es decir, todas aquellas que correspondan a los elementos que nos aparecen a la derecha del **Prompt**.
 - Y dejar la izquierda del Prompt de la siguiente manera:
 
-![[izquierdaPW10k.png]]
+![[izquierdaPW10k.png]](/Images/izquierdaPW10k.png)
 
 - Con **status** nos reconoce si los comandos que escribamos tienen un estado exitoso o erróneo.
 - Con **context** nos muestra cuál es el código de ese estado.
@@ -270,37 +270,37 @@ Ahora deberíamos de hacer el mismo proceso que hemos hecho con **root** ya que 
 Root tiene su propio directorio home, para irnos a él con sólo escribit **cd** nos bastaría.
 ```
 
-![[rootP10k.png]]
+![[rootP10k.png]](/Images/rootP10k.png)
 
 - Volvemos a ir al archivo de configuración **p10k.zsh** y lo dejamos igual que nuestro usuario.
 
 Una vez guardado el fichero nos salimos, cerramos la terminal, volvemos a abrirla, accedemos como **root** y escribimos **zsh**.
 
-![[rootZsh.png]]
+![[rootZsh.png]](/Images/rootZsh.png)
 
 Vamos a cambiar el texto por un icono para que no nos ocupe tanto espacio y quede más cool xD.
 
 - Para ello accedemos al **p10k.zsh** de root y nos filtramos por **ROOT_TEMPLATE**.
 
-![[FiltrarRootTemplate.png]]
+![[FiltrarRootTemplate.png]](/Images/FiltrarRootTemplate.png)
 
-![[CAMBIARRoot.png]]
+![[CAMBIARRoot.png]](/Images/CAMBIARRoot.png)
 
 - Entre las comillas vamos a poner nuestro icono que queramos que aparezca, para ello nos vamos a la página **Nerd Fonts** y damos en **Icons**.
 
-![[Icons.png]]
+![[Icons.png]](/Images/Icons.png)
 
 Buscamos el que nos guste y le damos a **Icon** para copiarlo.
 
-![[iconos.png]]
+![[iconos.png]](/Images/iconos.png)
 
 Nos dirigimos al texto que queríamos cambiar por el icono y lo sustituimos.
 
-![[iconRoot.png]]
+![[iconRoot.png]](/Images/iconRoot.png)
 
 - Guardamos, cerramos la terminal, abrimos de nuevo, accedemos al usuario root y escribimos zsh.
 
-![[AndroidRoot.png]]
+![[AndroidRoot.png]](/Images/AndroidRoot.png)
 
 Ya vemos nuestro icono configurado correctamente!! Ahora bien, vamos a ver cómo establecer la **zsh** como la shell por defecto en vez de **bash** para no tener que escribir siempre **zsh** para usarla.
 
@@ -313,13 +313,13 @@ cd /root
 ln -s -f /home/user/.zshrc .zshrc
 ```
 
-![[enlaceSimbolico.png]]
+![[enlaceSimbolico.png]](/Images/enlaceSimbolico.png)
 
 Ahora cada vez que hagamos cualquier cambio en nuestro **user**, cambiará en el de root también.
 
 Vamos a quitar el *Welcome to Parrot* que aparece cuando entramos en la zsh.
 
-![[quitarWelcome.png]]
+![[quitarWelcome.png]](/Images/quitarWelcome.png)
 
 ### Cambiar la Shell de Bash a Zsh
 
@@ -333,7 +333,7 @@ usermod --shell /usr/bin/zsh user
 reboot
 ```
 
-![[zshInstalada.png]]
+![[zshInstalada.png]](/Images/zshInstalada.png)
 
 Ya lo tenemos todo correctamente funcionando, además esta **zsh** nos trae con un predictor inteligente.
 
@@ -351,11 +351,11 @@ chown user:user /root/.local -R
 #### BAT
 Con bat veremos un output mucho más estético, para ello buscamos **bat github** en google y nos vamos al primer resultado. Posteriormente nos dirigimos a los **releases** y nos descargamos de la última versión el **deb**
 
-![[BAT1.png]]
+![[BAT1.png]](/Images/BAT1.png)
 
-![[BAT2.png]]
+![[BAT2.png]](/Images/BAT2.png)
 
-![[BAT3.png]]
+![[BAT3.png]](/Images/BAT3.png)
 
 Una vez descargado, lo tenemos que instalar:
 
@@ -366,15 +366,15 @@ sudo dpkg -i bat_0.18.3_amd64.deb
 
 Ahora si escribimos **bat /etc/hosts** lo veremos de la siguiente manera:
 
-![[batdesign.png]]
+![[batdesign.png]](/Images/batdesign.png)
 
 Vemos que es mucho más bonito. Ahora vamos a agregar un alias para que el **cat** nos lo detecte como **bat**. Para ello nos vamos al *.zshrc* y creamos lo siguiente:
 
-![[aliases.png]]
+![[aliases.png]](/Images/aliases.png)
 
 Si cerramos la terminal y volvemos a abrirla, veremos que se ejecuta el **bat** correctamente:
 
-![[catETCHOSTS.png]]
+![[catETCHOSTS.png]](/Images/catETCHOSTS.png)
 
 ### Tarea
 
