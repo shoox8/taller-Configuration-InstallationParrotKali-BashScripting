@@ -1,6 +1,8 @@
 # Taller de Configuración e Instalación de Kali Linux y Parrot OS - Bash Scripting
 
-![](/Images/logo.png)
+<p align="center">
+  <img src="/Images/logo.png"/>
+</p>
 
 La documentación está accesible en el fichero **Documentation.md**. [Documentación](https://github.com/shoox8/taller-Configuration-InstallationParrotKali-BashScripting/blob/main/Documentation.md)
 
