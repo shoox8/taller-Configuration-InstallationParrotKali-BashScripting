@@ -222,7 +222,7 @@ sudo rm Hack.zip
 
 ![[MonoRegular.png]](/Images/MonoRegular.png)
 
-### Descarga y configuración de powerlevel10k
+## Descarga y configuración de powerlevel10k
 
 - Accedemos al siguiente enlace [Powerlevel10k](https://github.com/romkatv/powerlevel10k).
 
@@ -304,7 +304,7 @@ Nos dirigimos al texto que queríamos cambiar por el icono y lo sustituimos.
 
 Ya vemos nuestro icono configurado correctamente!! Ahora bien, vamos a ver cómo establecer la **zsh** como la shell por defecto en vez de **bash** para no tener que escribir siempre **zsh** para usarla.
 
-### Crear enlace simbólico del zshrc
+## Crear enlace simbólico del zshrc
 
 Para no tener que cambiar el fichero **.zshrc** tanto para el usuario root como para nuestro usuario, vamos a crear un enlace simbólico. Para ello, siendo **root** y estando en el directorio home de root, escribimos lo siguiente:
 
@@ -321,7 +321,7 @@ Vamos a quitar el *Welcome to Parrot* que aparece cuando entramos en la zsh.
 
 ![[quitarWelcome.png]](/Images/quitarWelcome.png)
 
-### Cambiar la Shell de Bash a Zsh
+## Cambiar la Shell de Bash a Zsh
 
 Si nos fijamos con : ``` cat /etc/passwd | grep -E '^root|^user'``` vemos que tenemos una **/bin/bash**. 
 
@@ -346,9 +346,9 @@ chown user:user /root/.cache -R
 chown user:user /root/.local -R
 ```
 
-### Instalar plugins para la terminal
+## Instalar plugins para la terminal
 
-#### BAT
+### BAT
 Con bat veremos un output mucho más estético, para ello buscamos **bat github** en google y nos vamos al primer resultado. Posteriormente nos dirigimos a los **releases** y nos descargamos de la última versión el **deb**
 
 ![[BAT1.png]](/Images/BAT1.png)
@@ -376,12 +376,12 @@ Si cerramos la terminal y volvemos a abrirla, veremos que se ejecuta el **bat** 
 
 ![[catETCHOSTS.png]](/Images/catETCHOSTS.png)
 
-### Tarea
+## Tarea
 
 - Realizar lo mismo con el **lsd** y aplicarle unos alias en el **.zshrc**.
 
 
-#### Solution: Aliases lsd
+### Solution: Aliases lsd
 
 ```
 alias ll='lsd -lh --group-dirs=first'
