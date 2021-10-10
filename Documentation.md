@@ -3,7 +3,7 @@
 ## Instalación Kali y Parrot- OVA
 - En primer lugar, nos dirigmos a dónde aparece **Import** y seleccionamos nuestra OVA.
 
-![[ImportKali.png]]
+![[ImportKali.png]](/Images/ImportKali.png)
 
 ![[selectOva.png]]
 
